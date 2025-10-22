@@ -1,4 +1,3 @@
-.env
 .venv/
 rpi_private.key
 rpi_public.key
