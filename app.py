@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 # --- Carga .env ---
 load_dotenv()
-ACCESS_TOKEN = os.getenv("ACCESS_TOKEN", "")
+ACCESS_TOKEN = os.getenv("ACCESS_TOKEN", "") # Carga el env o si no encuentra en el env, usa cadena vacía
 SECRET_KEY   = os.getenv("FLASK_SECRET", "change-me")
 BIND_HOST    = os.getenv("BIND_HOST", "0.0.0.0")
 BIND_PORT    = int(os.getenv("BIND_PORT", "5003"))
